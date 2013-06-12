@@ -1,8 +1,13 @@
-# Read about factories at https://github.com/thoughtbot/factory_girl
-
 FactoryGirl.define do
-  factory :user, :class => 'Users' do
-    name "MyString"
-    age 1
+  factory :man, :class => 'User' do
+    name "Henry"
+    age 25
+    gender 'male'
+  end
+
+  factory :woman, :class => 'User' do
+    name "Alice"
+    age 12
+    gender 'female'
   end
 end

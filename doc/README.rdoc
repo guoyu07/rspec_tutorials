@@ -25,3 +25,23 @@ You may change the database.yml setting first.
     gem "factory_girl"
     gem "factory_girl_rails"
   end
+
+  Then run the following rake tasks:
+  bunlde install
+  rails generate rspec:install
+
+3. run all tests
+  rake spec
+
+4. run all modles tests
+  rake spec:models
+
+4. run single test file
+  rspec spec/models/user_spec.rb
+
+5. run single test method within a test file
+  rspec file_path:line_no
+
+  The line_no is the method location in your test file. Such as:
+
+  rspec spec/models/user_spec.rb:10
